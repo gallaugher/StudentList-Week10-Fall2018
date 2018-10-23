@@ -22,6 +22,12 @@ class StudentDetailViewController: UIViewController {
         }
         studentNameField.text = student
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "UnwindFromSave" {
+            student = studentNameField.text
+        }
+    }
 
     @IBAction func cancelBarButtonPressed(_ sender: UIBarButtonItem) {
         let isPresentingInAddMode = presentingViewController is UINavigationController

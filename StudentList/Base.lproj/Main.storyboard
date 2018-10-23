@@ -107,7 +107,11 @@
                                 <action selector="cancelBarButtonPressed:" destination="Toy-0l-pgG" id="56E-mJ-MC6"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="d7r-Mi-pIv"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="d7r-Mi-pIv">
+                            <connections>
+                                <segue destination="Gvp-Hs-lUR" kind="unwind" identifier="UnwindFromSave" unwindAction="unwindFromStudentDetailViewControllerWithSegue:" id="fWO-Yn-YxU"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="cancelBarButton" destination="6iM-IX-DuR" id="xdW-Wx-p8k"/>
@@ -116,6 +120,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AKh-nG-aIr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Gvp-Hs-lUR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2847.1999999999998" y="131.52709359605913"/>
         </scene>

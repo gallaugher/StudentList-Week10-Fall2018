@@ -51,6 +51,23 @@ class ViewController: UIViewController {
             let destination = segue.destination as! StudentDetailViewController
             let selectedIndexPath = tableView.indexPathForSelectedRow!
             destination.student = students[selectedIndexPath.row]
+        } else {
+            if let selectedPath = tableView.indexPathForSelectedRow {
+                tableView.deselectRow(at: selectedPath, animated: true)
+            }
+        }
+    }
+    
+    @IBAction func unwindFromStudentDetailViewController(segue: UIStoryboardSegue) {
+        let source = segue.source as! StudentDetailViewController
+        if let selectedIndexPath = tableView.indexPathForSelectedRow {
+            students[selectedIndexPath.row] = source.student
+            tableView.reloadRows(at: [selectedIndexPath], with: .automatic)
+        } else {
+            let newIndexPath = IndexPath(row: students.count, section: 0)
+            students.append(source.student)
+            tableView.insertRows(at: [newIndexPath], with: .bottom)
+            tableView.scrollToRow(at: newIndexPath, at: .bottom, animated: true)
         }
     }
 }
