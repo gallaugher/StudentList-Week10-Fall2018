@@ -51,10 +51,6 @@ class ViewController: UIViewController {
             let destination = segue.destination as! StudentDetailViewController
             let selectedIndexPath = tableView.indexPathForSelectedRow!
             destination.student = students[selectedIndexPath.row]
-        } else {
-            if let selectedPath = tableView.indexPathForSelectedRow {
-                tableView.deselectRow(at: selectedPath, animated: true)
-            }
         }
     }
 }
