@@ -12,6 +12,7 @@
 		3E2AD3712176434D007DAF37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E2AD36F2176434D007DAF37 /* Main.storyboard */; };
 		3E2AD3732176434F007DAF37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E2AD3722176434F007DAF37 /* Assets.xcassets */; };
 		3E2AD3762176434F007DAF37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E2AD3742176434F007DAF37 /* LaunchScreen.storyboard */; };
+		3E2AD38021765C3B007DAF37 /* StudentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2AD37F21765C3B007DAF37 /* StudentDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3E2AD3722176434F007DAF37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E2AD3752176434F007DAF37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E2AD37721764350007DAF37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E2AD37F21765C3B007DAF37 /* StudentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				3E2AD36B2176434D007DAF37 /* AppDelegate.swift */,
 				3E2AD36D2176434D007DAF37 /* ViewController.swift */,
+				3E2AD37F21765C3B007DAF37 /* StudentDetailViewController.swift */,
 				3E2AD36F2176434D007DAF37 /* Main.storyboard */,
 				3E2AD3722176434F007DAF37 /* Assets.xcassets */,
 				3E2AD3742176434F007DAF37 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				3E2AD36E2176434D007DAF37 /* ViewController.swift in Sources */,
 				3E2AD36C2176434D007DAF37 /* AppDelegate.swift in Sources */,
+				3E2AD38021765C3B007DAF37 /* StudentDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
